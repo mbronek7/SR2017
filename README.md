@@ -3,7 +3,7 @@
 ### Słownik pojęć SR 2017
 
 * [Proces](#proces)
-* [C Sharp](#csharp)
+
 
 ### Proces
 
