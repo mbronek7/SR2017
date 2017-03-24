@@ -4,7 +4,7 @@
 
 * [Proces](#proces)
 * [Wykorzystanie wątków u klienta w celu polepszenia działania](#wykorzystanie-wątków-u-klienta-w-celu-polepszenia-działania)
-* [Obliczenia w chmurze] (#obliczenia-w-chmurze)
+* [Obliczenia w chmurze](#obliczenia-w-chmurze)
 
 
 ### Proces
