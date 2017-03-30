@@ -14,12 +14,13 @@
 [17-03-08 zpl, wersja 1.1]<br />
 
 
-
+ 
 ### Wykorzystanie wątków u klienta w celu polepszenia działania
-* Wątki wykorzystuje się w celu wykonywania wielu rzeczy jednocześnie. Wątek z definicji jest podstawową jednostką wykorzystywaną przez procesor. Procesor w jednej chwili może wykonywać tyle wątków ile ma rdzeni. Procesor  w ciągu każdej sekundy przełącza sie pomiędzy uruchomionymi wątkami, dzięki temu użytkownik ma wrażenie, ciągłości wykonywania wszytkich włączonych aktualnie procesów. Wyodrębniamy też wątki poziomu użytkownika. Wykorzystuje je się w celu przeniesienia części operacji na maszynę użytkownika. Największą zaletą tego rozwiązania jest zmniejszenie kosztów związanych z wykonywaniem obliczeń przez nasz serwer, również wzrasta maksymalna ilość użytkownikow, którzy mogą korzystać z naszej aplikacji w tym samym czasie. Mozna przeżucić wszystkie obliczenia na maszyne klienta i w ten sposób unikniemy opóźnień w interakcji klient-serwer, ponieważ dla serwera obliczenia nie będą obciążeniem. Dobrym przykładem użycia takiego rozwiązania z powodzeniem są nowoczesne przeglądarki internetowe, które tworzą setki wątków, z których dziesiątki są aktywne jednocześnie i te związane z obliczeniami wykorzytywane są po stronie klienta. Użytkownik zamykając nowe okno od razu ujrzy efekt a sam proces jest wygaszany w tle.<br />
-[21-03-08 Michał Bronikowski, wersja 1.0]<br />
-[25-03-08 Michał Bronikowski, wersja 2.0]<br />
-
+* Wątki wykorzystuje się w procesach w celu wykonywania wielu rzeczy jednocześnie. Wątek z definicji jest podstawową jednostką sterowania w procesie. Procesor może jednocześnie wykonywać tyle wątków, ile ma rdzeni. Procesor w każdej sekundzie wielokrotnie przełącza się pomiędzy wykonywanymi wątkami. Dzięki czemu użytkownik ma wrażenie, ciągłości wykonywania wszystkich aktualnie działających wątków. W systemach rozproszonych część przetwarzania może być wykonywana po stronie użytkownika.Wykorzystywanych w tym celu wątków nie należy mylić z <b> wątkami poziomu użytkownika</b> (w odróżnieniu od wątków jądrowych).Wątki działające <b>u użytkownika</b>, tj. po stronie aplikacji klienta, są stosowane w celu odciążenia
+serwera. Największą zaletą tego rozwiązania jest zmniejszenie kosztów związanych z wykonywaniem obliczeń przez nasz serwer. Umożliwia to obsługiwanie przez serwer większej liczby użytkowników którzy mogą korzystać z naszej aplikacji w tym samym czasie. Można przerzucić znaczna ilość obliczeń na maszynę klienta i w ten sposób unikać opóźnień w interakcji klient-serwer. Dobrym przykładem udanego użycia takiego rozwiązania są nowoczesne przeglądarki internetowe, które tworzą wątki,z których część jest aktywna jednocześnie przy czym chodzi tu o wątki działające po stronie klienta. Na przykład użytkownik, zamykający nowe okno od razu ujrzy efekt, lecz związany z tym proces (i jego wątki) jest stopniowo wygaszany w tle.<br />
+[17-03-21 mbr, wersja 1.0]<br />
+[17-03-25 mbr, wersja 2.0]<br />
+[17-03-30 zpl, wersja 2.1]<br />
 
 
 ### Obliczenia w chmurze
