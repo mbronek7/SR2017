@@ -6,7 +6,7 @@
 * [Proces](#proces)
 * [Wykorzystanie wątków u klienta w celu polepszenia działania](#wykorzystanie-wątków-u-klienta-w-celu-polepszenia-działania)
 * [Obliczenia w chmurze](#obliczenia-w-chmurze)
-
+* [Corba](#corba)
 
 ### System Rozproszony
 
@@ -19,9 +19,9 @@
 <li>Odpornością na błędy</li>
 <li>Przezroczystość</li>
 </ul>
-
-</p>
-
+</p><br />
+[17-05-14 mbr, wersja 1.0]
+<br />
 ### Proces
 
  <p align="justify">Proces (ang. process) -- w informatyce pojęcie związane z systemami operacyjnymi. Proces jest programem w trakcie działania  i jako taki stanowi jednostkę pracy systemu operacyjnego. Kod programu jest statyczną częścią procesu. Dynamiczna część procesu jest reprezentowana przez stan sprzętowych rejestrów komputera, ze szczególnym uwzględnieniem licznika rozkazów. Podczas pracy proces może się rozgałęziać, tworząc  procesy potomne. Każdy proces potrzebuje zasobów, z których korzysta lub które zużywa. Do najważniejszych zasobów procesu należą pamięć operacyjna, czas procesora i pliki.<br /></p>
@@ -40,3 +40,11 @@
 ### Obliczenia w chmurze
  <p align="justify">Idea stojąca za obliczeniami w chmurze opiera się na tym, by odciążyć komputery klienckie i przenieść obliczenia, oprogramowanie, a także część danych na serwery chmury. Sam termin można wyśledzić już w latach 90, ale jego spopularyzowanie przypisuje się korporacji Amazon, który zaczął świadczyć takie usługi w roku 2006.  Jedną z niezaprzeczalnych zalet chmury jest skalowalność, klient potrzebujący więcej mocy może wypożyczyć kolejne maszyny. Chmury dzielimy na 4 warstwy: sprzętu, infrastruktury, platformy i aplikacji. Na najniższej warstwie sprzętowej znajdują się podstawowe elementy, takie jak procesory, pamięć i dyski twarde. Na kolejnych poziomach pojawia się wirtualizacja i rośnie poziom abstrakcji. Warstwa infrastruktury przypomina warstwę sprzętową, ale jej zasoby są wirtualizowane. Warstwę platformy przyrównać można do systemu operacyjnego, oferuje ona programistom środowisko, na którym można łatwo testować i uruchamiać aplikacje. W ostatniej warstwie aplikacji można korzystać z programów przygotowanych przez dostawcę usług. Programy te są wykonywane na sprzęcie dostawcy. Warto zauważyć, że im większa warstwa, tym bardziej faktyczne maszyny stają się mniej widoczne dla klienta. Ten brak transparentności może przeszkadzać przy szacowaniu złożoności aplikacji. Pojawiają się też wątpliwości na temat bezpieczeństwa plików w chmurze i zagrożenia dla naszej prywatności. Dostęp do chmury uzyskać można przez różne interfejsy, począwszy od linii poleceń, skończywszy na aplikacji sieciowej. Istnieją różne modele dostępu do obliczeń w chmurze. Wyróżnić można IaaS, PaaS i SaaS. Pierwszy model pokrywa warstwę sprzętu i infrastruktury, drugi obejmuje warstwę platformy, a trzeci skupia się na warstwie aplikacji. Co ciekawe, chmury używane są także w branży rozrywkowej, co można zaobserwować na przykładzie takich serwisów jak  Nvidia GRID. <br /></p>
 [24-03-08 Jakub ledwoń, wersja 0.5]<br />
+
+
+### Corba
+ <p align="justify"> </p> CORBA (<i>ang. Common Object Request Broker Architecture</i>) -- jest to system pozwalający na komunikacje pomiędzy modułami pracującymi w różnych architekturach systemowych. Obiekty moga też być zaimplementowane w róznych technologiach np.: Python i Java. Corba przypomina program napisany obiektowo. Każdy obiekt ma swój własny interfejs ,który jest interpretowany w czasie wykonywania, a współdzielone są metody.W szczególności system oparty na CORBA jest zbiorem obiektów, które oddzielają serwery od klientów przy pomocy dobrze określonego interfejsu programistycznego. Podsumowując Corba jest zbiorem specyfikacji, które określają standardowe metody dostępu do zdalnych obiektów i komunikacji pomiędzy nimi, niezależnie od systemu operacyjnego, języka programowania oraz położenia w sieci.</p><br />
+ [17-05-14 mbr, wersja 1.0]<br />
+ 
+ 
+ 
