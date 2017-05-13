@@ -9,7 +9,7 @@
 * [DII](#dii)
 * [OMA](#oma)
 * [Corba](#corba)
-
+* [NFS](#nfs)
 
 ### System Rozproszony
 
@@ -56,5 +56,6 @@
  <p align="justify"> CORBA (<i>ang. Common Object Request Broker Architecture</i>) -- jest to system pozwalający na komunikacje pomiędzy modułami pracującymi w różnych architekturach systemowych. Obiekty moga też być zaimplementowane w róznych technologiach np.: Python i Java. Corba przypomina program napisany obiektowo. Każdy obiekt ma swój własny interfejs ,który jest interpretowany w czasie wykonywania, a współdzielone są metody.W szczególności system oparty na CORBA jest zbiorem obiektów, które oddzielają serwery od klientów przy pomocy dobrze określonego interfejsu programistycznego. Podsumowując Corba jest zbiorem specyfikacji, które określają standardowe metody dostępu do zdalnych obiektów i komunikacji pomiędzy nimi, niezależnie od systemu operacyjnego, języka programowania oraz położenia w sieci.</p><br />
  [17-05-14 mbr, wersja 1.0]<br />
  
- 
-
+### NFS
+  <p align="justify"> NFS (<i>ang. Network File System</i>) -- protokół zdalnego udostepniania plików. Pozwala użytkownikowi współdzielic swoje pliki poprzez sieć internetową, wiele komputerów uzyskuje dostęp do informacji zawartych na jednej stacji roboczej. Jedną z korzyści jest możliwość posiadania przez kilka komputerów wspólnego katalogu z aktualizacjami oprogramowania, dzięki czemu nie ma potrzeby pobierania ich na każdym z komputerów oddzielnie. Gdy użytkownik łączy się z serwerem przez NFS jądro wysyła wywołanie RPC do demona NFS na serwerze. To wywołanie przekazuje nazwę pliku i ID użytkownika oraz jego grupy. Potem następuje ustalania praw dostępu użytkownikowi, poprzez porównanie informacji o ID użytkownika i jego grupy, które są zawarte na serwerze. Pozwala to uniemożliwić nieuprawnionym użytkownikom odczytywanie lub modyfikowanie plików.</p><br />
+ [17-05-14 mbr, wersja 1.0]<br />
