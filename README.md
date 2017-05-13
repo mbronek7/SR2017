@@ -10,7 +10,7 @@
 
 ### System Rozproszony
 
-* <p align="justify"> System rozproszony -- zestaw połączonych ze sobą niezależnych komputerów. Urzytkownik takiego systemu najczęściej nie jest w stanie stwierdzić czy system z którego aktualnie korzysta jest jedną zwartą logicznie całością, czy właśnie rozproszonymi modułami. Poszczególne komputery współdzielą swoje zasoby. Systemy rozproszone wyróżniają się : 
+ <p align="justify"> System rozproszony -- zestaw połączonych ze sobą niezależnych komputerów. Urzytkownik takiego systemu najczęściej nie jest w stanie stwierdzić czy system z którego aktualnie korzysta jest jedną zwartą logicznie całością, czy właśnie rozproszonymi modułami. Poszczególne komputery współdzielą swoje zasoby. Systemy rozproszone wyróżniają się : 
 <ul>
 <li>Spójnym i jednolitym interfejsem</li>
 <li>Skalowalnością (łatwością rozszerzenia)</li>
