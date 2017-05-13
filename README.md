@@ -2,10 +2,25 @@
 
 ### Słownik pojęć SR 2017
 
+* [System Rozproszony](#system-rozproszony)
 * [Proces](#proces)
 * [Wykorzystanie wątków u klienta w celu polepszenia działania](#wykorzystanie-wątków-u-klienta-w-celu-polepszenia-działania)
 * [Obliczenia w chmurze](#obliczenia-w-chmurze)
 
+
+### System Rozproszony
+
+* <p align="justify"> System rozproszony -- zestaw połączonych ze sobą niezależnych komputerów. Urzytkownik takiego systemu najczęściej nie jest w stanie stwierdzić czy system z którego aktualnie korzysta jest jedną zwartą logicznie całością, czy właśnie rozproszonymi modułami. Poszczególne komputery współdzielą swoje zasoby. Systemy rozproszone wyróżniają się : 
+<ul>
+<li>Spójnym i jednolitym interfejsem</li>
+<li>Skalowalnością (łatwością rozszerzenia)</li>
+<li>Sprawnością wykorzystywania zasobów</li>
+<li>Dużą wydajnością</li>
+<li>Odpornością na błędy</li>
+<li>Przezroczystość</li>
+</ul>
+
+</p>
 
 ### Proces
 
