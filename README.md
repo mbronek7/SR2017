@@ -7,6 +7,7 @@
 * [Wykorzystanie wątków u klienta w celu polepszenia działania](#wykorzystanie-wątków-u-klienta-w-celu-polepszenia-działania)
 * [Obliczenia w chmurze](#obliczenia-w-chmurze)
 * [Corba](#corba)
+* [DII](#dii)
 
 ### System Rozproszony
 
@@ -43,8 +44,10 @@
 
 
 ### Corba
- <p align="justify"> </p> CORBA (<i>ang. Common Object Request Broker Architecture</i>) -- jest to system pozwalający na komunikacje pomiędzy modułami pracującymi w różnych architekturach systemowych. Obiekty moga też być zaimplementowane w róznych technologiach np.: Python i Java. Corba przypomina program napisany obiektowo. Każdy obiekt ma swój własny interfejs ,który jest interpretowany w czasie wykonywania, a współdzielone są metody.W szczególności system oparty na CORBA jest zbiorem obiektów, które oddzielają serwery od klientów przy pomocy dobrze określonego interfejsu programistycznego. Podsumowując Corba jest zbiorem specyfikacji, które określają standardowe metody dostępu do zdalnych obiektów i komunikacji pomiędzy nimi, niezależnie od systemu operacyjnego, języka programowania oraz położenia w sieci.</p><br />
+ <p align="justify"> CORBA (<i>ang. Common Object Request Broker Architecture</i>) -- jest to system pozwalający na komunikacje pomiędzy modułami pracującymi w różnych architekturach systemowych. Obiekty moga też być zaimplementowane w róznych technologiach np.: Python i Java. Corba przypomina program napisany obiektowo. Każdy obiekt ma swój własny interfejs ,który jest interpretowany w czasie wykonywania, a współdzielone są metody.W szczególności system oparty na CORBA jest zbiorem obiektów, które oddzielają serwery od klientów przy pomocy dobrze określonego interfejsu programistycznego. Podsumowując Corba jest zbiorem specyfikacji, które określają standardowe metody dostępu do zdalnych obiektów i komunikacji pomiędzy nimi, niezależnie od systemu operacyjnego, języka programowania oraz położenia w sieci.</p><br />
  [17-05-14 mbr, wersja 1.0]<br />
  
  
- 
+### DII
+ <p align="justify"> DII (<i>ang.  Dynamic Invocation Interface</i>) -- to Interfejs Dynamicznych Wywołań. część implementacji OMA. Interfejsy obiektów dzielimy na znane w trakcie etapu kompliacji i dynamiczne. Interfejsy dynamiczne pozwalają klientom używać obiektów CORBA, których typy nie były znane w czasie kompilacji.</p><br />
+ [17-05-14 mbr, wersja 1.0]<br />
