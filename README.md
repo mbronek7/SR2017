@@ -10,6 +10,11 @@
 * [OMA](#oma)
 * [Corba](#corba)
 * [NFS](#nfs)
+* [Algorytm tyrana](#algorytm-tyrana)
+* [Zwielokrotnianie](#zwielokrotnianie)
+* [Rozproszona pamięć współdzielona](#rozproszona-pamięć-współdzielona)
+* [Spójność ścisła](#spójność-ścisła)
+* [Właściwości ACID](#właściwości-acid)
 
 ### System Rozproszony
 
@@ -60,3 +65,35 @@
 ### NFS
   <p align="justify"> NFS (<i>ang. Network File System</i>) -- protokół zdalnego udostepniania plików. Pozwala użytkownikowi współdzielic swoje pliki poprzez sieć internetową, wiele komputerów uzyskuje dostęp do informacji zawartych na jednej stacji roboczej. Jedną z korzyści jest możliwość posiadania przez kilka komputerów wspólnego katalogu z aktualizacjami oprogramowania, dzięki czemu nie ma potrzeby pobierania ich na każdym z komputerów oddzielnie. Gdy użytkownik łączy się z serwerem przez NFS jądro wysyła wywołanie RPC do demona NFS na serwerze. To wywołanie przekazuje nazwę pliku i ID użytkownika oraz jego grupy. Potem następuje ustalania praw dostępu użytkownikowi, poprzez porównanie informacji o ID użytkownika i jego grupy, które są zawarte na serwerze. Pozwala to uniemożliwić nieuprawnionym użytkownikom odczytywanie lub modyfikowanie plików.</p><br />
  [17-05-14 mbr, wersja 1.0]<br />
+
+### Algorytm tyrana
+<p align="justify"> Algorytm tyrana (<i>ang. bully algorithm</i>) jest to tak zwany algorytm elekcji (<i>ang. election algorithm</i>) i służy do wyboru koordynatora, czyli procesu nadzorującego inne procesy. 
+
+Zasada działania algorytmu:
+
+Gdy bieżący koordynator przestaje odpowiadać na żądania innych procesów, proces <i>p</i> wysyła komunikat do wszystkich procesów z wyższym priorytetem. Jeśli nie dostanie odpowiedzi zostaje koordynatorem. W przeciwnym przypadku odpowiadający proces, jeśli już tego nie robił, przejmuje zadanie ustalenia koordynatora i cykl się powtarza. Algorytm wyłania jeden aktywny proces, który zostaje koordynatorem i wysyła do pozostałych procesów informacje o tym.<br /></p>
+[13.06.2017 Mateusz Sroka, wersja 1.0]<br />
+
+### Zwielokrotnianie
+<p align="justify"> Zwielokrotnianie (<i>ang. replication</i>) to mechanizm stosowany w systemach rozproszonych, polegający na utrzymywaniu wielu kopii tych samych danych na niezależnych serwerach, w celu zwiększenia dostępności i efektywności przetwarzania tych danych. Jednym z głównych problemów generowanych przez to podejście jest problem spójności danych. Użytkownik wprowadza zmiany tylko na jednej kopi, jednak wszystkie inne również powinny zostać szybko zaktualizowane. By rozwiązać te problemy stworzono wiele modeli spójności danych. <br /></p>
+[13.06.2017 Mateusz Sroka, wersja 1.0]<br />
+
+### Rozproszona pamięć współdzielona
+<p align="justify"> Rozproszona pamięć współdzielona (<i>ang. distributed shared memory, DSM</i>) to architektura pamięci, w której wiele odseparowanych jednostek pamięci może być adresowanych jako jedna logiczna przestrzeń adresowa. Jej głównym celem jest zapewnienie w jak najbardziej przezroczysty sposób dostępu do wspólnych danych przez procesy na różnych procesorach. DSM wymaga zastosowania metod synchronizacji takich jak semafory. Komunikacja przy takiej pamięci odbywa się poprzez przekazywanie komunikatów pomiędzy procesami, przez co wydajność dostępu do takiej pamięci jest gorsza niż w przypadku dostępu bezpośredniego. Dwa główne sposoby wspierania DSM to wsparcie systemowe, gdzie zarządzaniem dostępem do pamięci zajmuje się bezpośrednio jądro oraz wsparcie biblioteczne, gdzie procesy uzyskują dostęp za pomocą wywołań bibliotecznych. <br /></p>
+[13.06.2017 Mateusz Sroka, wersja 1.0]<br />
+
+### Spójność ścisła
+<p align="justify"> Spójność ścisła (<i>ang. strict consistency</i>) - model spójności polegający na tym, że każda próba odczytania jakichś danych zwraca wartość ostatniego zapisu do tych danych. W praktyce jednak taka sytuacja jest bardzo trudna lub niemożliwa do uzyskania. Jedną z implementacji tego modelu jest centralny serwer przetwarzający wszystkie komunikaty. Takie rozwiązania są jednak wysoce nieefektywne, dlatego zwykle stosuje się inne, mniej restrykcyjne, modele. <br /></p>
+[13.06.2017 Mateusz Sroka, wersja 1.0]<br />
+
+### Właściwości ACID
+<p align="justify"> Właściwości ACID to podstawowe własności transakcji, czyli operacji na współdzielonych danych. Są to kolejno: atomowość (<i>ang. atomicity</i>), spójność (<i>ang. consistency</i>), izolacja (<i>ang. isolation</i>), trwałość (<i>ang. durability</i>).
+
+Atomowość czyli traktowanie transakcji jako niepodzielnej części, która musi być wykonana w całości i bez przerwań, od początku do końca. Z zewnątrz transakcja wygląda jak pojedyncza instrukcja, a wszystkie jej pośrednie działania są ukryte przed użytkownikiem.
+
+Spójność zapewnia, że dane spełniające zdefiniowane własności przed transakcją będą je spełniać także po niej.
+
+Izolacja zapewnia, że wynik wykonujących się współbieżnie transakcji będzie taki sam, jak gdyby te wykonywały się sekwencyjnie - jedna po drugiej. W zależności od metod kontroli współbieżności, skutki niedokończonej transakcji mogą nie być widoczne dla innych transakcji.
+
+Trwałość oznacza, że w momencie pomyślnego ukończenia transakcji nie da się cofnąć jej zmian i zostają one zachowane nawet w przypadku wystąpienia awarii lub błędów. <br /></p>
+[13.06.2017 Mateusz Sroka, wersja 1.0]<br />
