@@ -16,6 +16,7 @@
 * [Spójność ścisła](#spójność-ścisła)
 * [Właściwości ACID](#właściwości-acid)
 * [Przezroczystość](#przezroczystość)
+* [Otwartość](#otwartość)
 
 ### System Rozproszony
 
@@ -115,3 +116,6 @@ Wyróżniamy osiem głównych rodzajów przezroczystości:
 [20.06.2017 Wojciech Goska, wersja 1.0]<br />
 [20.06.2017 Wojciech Goska, wersja 1.1]<br />
 
+### Otwartość
+<p align="justify"> Otwartość (<i>ang. openness</i>), w systemach rozproszonych, charakteryzuje system, oferujący elementy, które z łatwością można wykorzystać czy zintegrować z zupełnie innym, nowym systemem, dzięki czemu jest on podatny na rozszerzenia oraz możliwość rozbudowy zarówno pod względem sprzętowym, jak i oprogramowania. Otwartość umożliwia nam dołączyć do naszego systemu kolejne urządzenie, bez martwienia się o jego oprogramowanie, ponieważ warstwa pośrednia zapewnia nam protokoły i interfejsy potrzebne do jego obsłużenia.<br />
+[20.06.2017 Wojciech Goska, wersja 1.0]<br />
