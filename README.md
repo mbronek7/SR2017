@@ -195,5 +195,13 @@ i wymuszają konieczność jego odtwarzania.</li>
 ### Serwer obiektowy
 
  <p align="justify">
+ <b>Serwer obiektowy</b> (ang. <i>object server</i>) jest środowiskiem do
+przechowywania i zarządzania obiektami, także tymi rozproszonymi. Każdy
+obiekt posiada pewien kod, w postaci zaimplementowanych metod, oraz stan w
+postaci danych. Sposób zarządzania tymi obiema częściami zależy w dużej
+mierze od serwera obiektowego, którego implementacja określa np. to ile wątków
+ma działać w ramach jednego obiektu, czy dla każdego wywołania ma być
+używany osobny wątek, czy obiekty powinny mieć dostęp do wspólnych
+segmentów pamięci itp.
  </p>
 <br/>[Szymon Kopa 1.0]<br/>
