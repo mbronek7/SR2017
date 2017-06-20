@@ -2,7 +2,7 @@
 
 ### Słownik pojęć SR 2017
 
-* [System Rozproszony](#system-rozproszony)
+* [System rozproszony](#system-rozproszony)
 * [Proces](#proces)
 * [Wykorzystanie wątków u klienta w celu polepszenia działania](#wykorzystanie-wątków-u-klienta-w-celu-polepszenia-działania)
 * [Obliczenia w chmurze](#obliczenia-w-chmurze)
@@ -24,19 +24,20 @@
 * [Serwer stanowy, a bezstanowy](#serwer-stanowy-a-bezstanowy)
 * [Serwer obiektowy](#serwer-obiektowy)
 
-### System Rozproszony
+### System rozproszony
 
- <p align="justify"> System rozproszony -- zestaw połączonych ze sobą niezależnych komputerów. Urzytkownik takiego systemu najczęściej nie jest w stanie stwierdzić czy system z którego aktualnie korzysta jest jedną zwartą logicznie całością, czy właśnie rozproszonymi modułami. Poszczególne komputery współdzielą swoje zasoby. Systemy rozproszone wyróżniają się : 
+ <p align="justify"> System rozproszony -- zestaw połączonych ze sobą niezależnych komputerów. Użytkownik takiego systemu najczęściej nie jest w stanie stwierdzić, czy system, z którego aktualnie korzysta, jest jedną zwartą logicznie i fizycznie całością, czy właśnie rozproszonymi modułami. Poszczególne komputery dzielą swoje zasoby. Systemy rozproszone wyróżniają się : 
 <ul>
-<li>Spójnym i jednolitym interfejsem</li>
-<li>Skalowalnością (łatwością rozszerzenia)</li>
-<li>Sprawnością wykorzystywania zasobów</li>
-<li>Dużą wydajnością</li>
-<li>Odpornością na błędy</li>
-<li>Przezroczystość</li>
+<li>spójnym i jednolitym interfejsem,</li>
+<li>skalowalnością (łatwością rozszerzenia),</li>
+<li>sprawnością wykorzystywania zasobów,</li>
+<li>dużą wydajnością,</li>
+<li>odpornością na błędy,</li>
+<li>przezroczystością.</li>
 </ul>
 </p><br />
 [17-05-14 mbr, wersja 1.0]
+[17-06-20 mbr, wersja 1.1]
 <br />
 
 ### Proces
