@@ -15,6 +15,7 @@
 * [Rozproszona pamięć współdzielona](#rozproszona-pamięć-współdzielona)
 * [Spójność ścisła](#spójność-ścisła)
 * [Właściwości ACID](#właściwości-acid)
+* [Przezroczystość](#przezroczystość)
 
 ### System Rozproszony
 
@@ -97,3 +98,19 @@ Izolacja zapewnia, że wynik wykonujących się współbieżnie transakcji będz
 
 Trwałość oznacza, że w momencie pomyślnego ukończenia transakcji nie da się cofnąć jej zmian i zostają one zachowane nawet w przypadku wystąpienia awarii lub błędów. <br /></p>
 [13.06.2017 Mateusz Sroka, wersja 1.0]<br />
+
+### Przezroczystość
+<p align="justify"> Przezroczystość (<i>ang. transparency</i>), w systemach rozproszonych, możemy rozumieć jako dbanie o wygodę ich użytkownika przez ukrywanie tych aspektów implementacji systemów, które nie są użytkownikowi potrzebne do osiągnięcia określonego celu, tak aby miał wrażenie że wszystko dzieje się w jednolitym systemie, na komputerze, z którego użytkownik w danej chwili korzysta.<br />
+Wyróżniamy osiem głównych rodzajów przezroczystości:
+<ul>
+<li>Przezroczystość dostępu</li>
+<li>Przezroczystość położenia</li>
+<li>Przezroczystość wędrówki</li>
+<li>Przezroczystość zwielokrotniania</li>
+<li>Przezroczystość skalowania</li>
+<li>Przezroczystość współbieżności</li>
+<li>Przezroczystość wydajności</li>
+<li>Przezroczystość awarii</li>
+</ul><br />
+[20.06.2017 Wojciech Goska, wersja 1.0]<br />
+
