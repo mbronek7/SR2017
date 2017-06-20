@@ -17,6 +17,7 @@
 * [Właściwości ACID](#właściwości-acid)
 * [Przezroczystość](#przezroczystość)
 * [Otwartość](#otwartość)
+* [Maszyna wirtualna](#maszyna-wirtualna)
 
 ### System Rozproszony
 
@@ -118,4 +119,10 @@ Wyróżniamy osiem głównych rodzajów przezroczystości:
 
 ### Otwartość
 <p align="justify"> Otwartość (<i>ang. openness</i>), w systemach rozproszonych, charakteryzuje system, oferujący elementy, które z łatwością można wykorzystać czy zintegrować z zupełnie innym, nowym systemem, dzięki czemu jest on podatny na rozszerzenia oraz możliwość rozbudowy zarówno pod względem sprzętowym, jak i oprogramowania. Otwartość umożliwia nam dołączyć do naszego systemu kolejne urządzenie, bez martwienia się o jego oprogramowanie, ponieważ warstwa pośrednia zapewnia nam protokoły i interfejsy potrzebne do jego obsłużenia.<br /></p>
+[20.06.2017 Wojciech Goska, wersja 1.0]<br />
+
+### Maszyna wirtualna
+<p align="justify"> Maszyna wirtualna (<i>ang. virtual machine</i>) to ogólna nazwa dla programów, które tworzą środowisko uruchomieniowe dla innych programów. Maszyna wirtualna obsługuje wszystkie odwołania uruchomionej aplikacji, w ten
+sposób "udając" że jest ona wykonywana na rzeczywistym sprzęcie. W maszynie wirtualnej możemy uruchomić program, system czy nawet kolejną maszynę wirtualną. Niestety, wszystko to działa kosztem zwiększonego wykorzystania procesora i pamięci
+operacyjnej, ponieważ poza uruchamianymi programami, sama maszyna wirtualna korzysta z tychże zasobów.<br /></p>
 [20.06.2017 Wojciech Goska, wersja 1.0]<br />
