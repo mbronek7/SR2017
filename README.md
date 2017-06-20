@@ -159,11 +159,29 @@ uśrednianie</li><li> Algorytm jest rozproszony</li><li>Algorytm uwzględnia cza
  ### Serwer iteracyjny, a współbieżny
 
  <p align="justify">
-
+ <ul>
+ <li><b>Serwer iteracyjny</b> samodzielnie obsługuje zlecenia klientów zwracając im ewentualnie wyniki. Innymi słowy
+serwer zmuszony jest do obsługi zleceń jedno po drugim, przy czym zanim rozpocznie kolejne zadanie musi
+zakończyć wykonywanie poprzedniego</li>
+<li><b>Serwer współbieżny</b> pozbawiony jest niedogodności powodującej, że każde kolejne żądanie musi oczekiwać
+w kolejce do momentu gdy zostaną obsłużone poprzednie. W tym przypadku serwer po odebraniu zlecenia
+od klienta przekazuje wykonanie zlecenia innemu wątkowi lub procesowi. Po tym jak przekaże zlecenie
+może natychmiast przystąpić do obsługi innych zleceń. Z architekturą serwerów współbieżnych wiąże się
+m.in. kwestia miejsca kontaktowego z serwerem. Miejscem takim jest zazwyczaj pewien dobrze znany
+wszystkim klientom port (tzw. punkt końcowy – ang. <i>endpoint</i>). Po skontaktowaniu się klienta przez taki port
+z serwerem klient otrzymuje np. nowy port do komunikacji z procesem obsługującym jego zlecenie, tym
+samym zwalnia punkt końcowy na rzecz nowych klientów serwera.</li>
+ </ul>
+ </p>
+<br/>[Szymon Kopa 1.0]<br/>
 ### Serwer stanowy, a bezstanowy
 
  <p align="justify">
  
+  </p>
+<br/>[Szymon Kopa 1.0]<br/>
  ### Serwer obiektowy
 
  <p align="justify">
+ </p>
+<br/>[Szymon Kopa 1.0]<br/>
