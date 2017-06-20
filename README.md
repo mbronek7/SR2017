@@ -18,6 +18,11 @@
 * [Przezroczystość](#przezroczystość)
 * [Otwartość](#otwartość)
 * [Maszyna wirtualna](#maszyna-wirtualna)
+* [Algorytmy synchronizacji czasu](#algorytmy-synchronizacji-czasu)
+* [Architektura klient-serwer](#architektura-klient-serwer)
+* [Serwer iteracyjny, a współbieżny](#serwer-iteracyjny-a-współbieżny)
+* [Serwer stanowy, a bezstanowy](#serwer-stanowy-a-bezstanowy)
+* [Serwer obiektowy](#serwer-obiektowy)
 
 ### System Rozproszony
 
