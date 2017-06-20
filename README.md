@@ -174,13 +174,25 @@ samym zwalnia punkt końcowy na rzecz nowych klientów serwera.</li>
  </ul>
  </p>
 <br/>[Szymon Kopa 1.0]<br/>
+
 ### Serwer stanowy, a bezstanowy
 
  <p align="justify">
- 
+ <ul>
+ <li><b>Serwer bezstanowy</b> charakteryzuje się głównie tym, że nie przechowuje danych o swoich klientach.
+Również zmiana stanu samego serwera niekoniecznie wpływa na zmianę stanu jego klientów. Przykładem
+może być tu prosty serwer plików lub serwer siec</li>
+<li>Przeciwieństwem serwera bezstanowego jest <b>serwer pełnostanowy</b>, który przechowuje informacje o swoich
+klientach np. w celu odesłania im w przyszłości jakichś danych. Również tutaj za przykład może posłużyć
+rozproszony systemem plików, tym razem jednak taki, który przechowuje informacje o klientach w celu
+zapewnienia im w przyszłości szybszego dostępu do danych.
+Zasadniczą niedogodnością w przypadku serwerów pełnostanowych są awarie, które powodują utratę stanu
+i wymuszają konieczność jego odtwarzania.</li>
+ </ul>
   </p>
 <br/>[Szymon Kopa 1.0]<br/>
- ### Serwer obiektowy
+
+### Serwer obiektowy
 
  <p align="justify">
  </p>
