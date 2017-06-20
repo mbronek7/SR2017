@@ -131,3 +131,23 @@ Wyróżniamy osiem głównych rodzajów przezroczystości:
 sposób "udając" że jest ona wykonywana na rzeczywistym sprzęcie. W maszynie wirtualnej możemy uruchomić program, system czy nawet kolejną maszynę wirtualną. Niestety, wszystko to działa kosztem zwiększonego wykorzystania procesora i pamięci
 operacyjnej, ponieważ poza uruchamianymi programami, sama maszyna wirtualna również korzysta z tychże zasobów.<br /></p>
 [20.06.2017 Wojciech Goska, wersja 1.0]<br />
+
+### Algorytmy synchronizacji czasu
+
+ <p align="justify">
+ 
+ ### Architektura klient-serwer
+
+ <p align="justify">
+ 
+ ### Serwer iteracyjny, a współbieżny
+
+ <p align="justify">
+
+### Serwer stanowy, a bezstanowy
+
+ <p align="justify">
+ 
+ ### Serwer obiektowy
+
+ <p align="justify">
