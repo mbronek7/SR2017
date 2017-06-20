@@ -134,7 +134,14 @@ operacyjnej, ponieważ poza uruchamianymi programami, sama maszyna wirtualna ró
 
 ### Algorytmy synchronizacji czasu
 
- <p align="justify">
+ <p align="justify">Wybrane algorytmy synchronizacji czasu:
+ <ol>
+ <li>Algorytm Cristiana</li>
+ <ul><li>Algorytm przeznaczony głównie dla systemów, w których jedna maszyna jest serwerem czasu, a reszta maszyn powinna być z nim zsynchronizowana</li>
+ <li>Okresowo każda maszyna wysyła komunikat do serwera czasu, pytając o bieżący czas. Serwer odsyła, jak szybko może wiadomość ze swoim aktualnym czasem</li>
+ 
+ </ul>
+ </ol>
  
  ### Architektura klient-serwer
 
