@@ -149,7 +149,7 @@ swoim czasie. Rozpoczyna jednocześnie zbierać
 informacje od innych maszyn. Gdy zbierze wszystkie,
 oblicza na ich podstawie nowy czas np. stosując
 uśrednianie</li><li> Algorytm jest rozproszony</li><li>Algorytm uwzględnia czasy przesyłania komunikatów</li><li>Algorytm odrzuca skrajne wartości</li></ul>
- </ol></p>
+ </ol></p><br/>[Szymon Kopa 1.0]
  
  ### Architektura klient-serwer
 
