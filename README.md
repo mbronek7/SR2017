@@ -136,20 +136,20 @@ operacyjnej, ponieważ poza uruchamianymi programami, sama maszyna wirtualna ró
 
  <p align="justify">Wybrane algorytmy synchronizacji czasu:
  <ol>
- <li>Algorytm Cristiana</li>
+ <li><b>Algorytm Cristiana</b></li>
  <ul><li>Algorytm przeznaczony głównie dla systemów, w których jedna maszyna jest serwerem czasu, a reszta maszyn powinna być z nim zsynchronizowana</li>
  <li>Okresowo każda maszyna wysyła komunikat do serwera czasu, pytając o bieżący czas. Serwer odsyła, jak szybko może wiadomość ze swoim aktualnym czasem</li></ul>
- <li>Algorytm z Berkeley</li><ul><li>Serwer czasu jest aktywny. Serwer czasu okresowo
+ <li><b>Algorytm z Berkeley</b></li><ul><li>Serwer czasu jest aktywny. Serwer czasu okresowo
  wypytuje każdą maszynę, aby poznać jej czas</li><li>Na podstawie odpowiedzi serwer wylicza średni czas i
 wysyła komunikaty do innych maszyn, aby odpowiednio
 zmieniły swój czas lub zwolniły zegar do momentu, aż
 zostanie osiągnięta właściwa jego wartość</li></ul>
-<li>Algorytm uśredniania</li><ul><li>Każda maszyna rozsyła co pewien okres informację o
+<li><b>Algorytm uśredniania</b></li><ul><li>Każda maszyna rozsyła co pewien okres informację o
 swoim czasie. Rozpoczyna jednocześnie zbierać
 informacje od innych maszyn. Gdy zbierze wszystkie,
 oblicza na ich podstawie nowy czas np. stosując
 uśrednianie</li><li> Algorytm jest rozproszony</li><li>Algorytm uwzględnia czasy przesyłania komunikatów</li><li>Algorytm odrzuca skrajne wartości</li></ul>
- </ol>
+ </ol></p>
  
  ### Architektura klient-serwer
 
