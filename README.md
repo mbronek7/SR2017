@@ -28,6 +28,7 @@
 * [Serwer iteracyjny, a współbieżny](#serwer-iteracyjny-a-współbieżny)
 * [Serwer stanowy, a bezstanowy](#serwer-stanowy-a-bezstanowy)
 * [Serwer obiektowy](#serwer-obiektowy)
+* [Model TCP/IP](#model-tcp/ip)
 
 ### System rozproszony
 
@@ -232,3 +233,9 @@ używany osobny wątek, czy obiekty powinny mieć dostęp do wspólnych
 segmentów pamięci itp.
  </p>
 <br/>[Szymon Kopa 1.0]<br/>
+
+### Model TCP/IP
+
+<p align="justify">Model TCP/IP (<i>ang. Transmission Control Protocol/ Internet Protocol</i>)- model struktury protokołów komunikacyjnych, zakładający podział warstwy komunikacyjnej na cztery kolejne, współpracujące warstwy tj. : warstwa aplikacji, warstwa transportowa, warstwa Internetu oraz warstwa dostępu do sieci. Model ten został stworzony przez amerykańską agencję rządową DARPA (<i>ang. Defence Advanced Research Projects Agency</i>) w latach 70. i pierwotnie miał pomagać w tworzeniu odpornych na ataki sieci komputerowych.	<br />
+Więcej informacji o protokołach TCP, IP oraz o wielu innych można znaleźć <a href="http://www.networksorcery.com/">tutaj</a><br /></p>
+[21.06.2017 Wojciech Goska, wersja 1.0]<br />
