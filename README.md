@@ -6,6 +6,11 @@
 * [Proces](#proces)
 * [Wykorzystanie wątków u klienta w celu polepszenia działania](#wykorzystanie-wątków-u-klienta-w-celu-polepszenia-działania)
 * [Obliczenia w chmurze](#obliczenia-w-chmurze)
+* [BitTorrent](#bittorrent)
+* [MD5](#md5)
+* [Spójność FIFO](#spójność-FIFO)
+* [Plotkowanie](#plotkowanie)
+* [Elixir](#elixir)
 * [DII](#dii)
 * [OMA](#oma)
 * [Corba](#corba)
@@ -56,8 +61,30 @@
 
 
 ### Obliczenia w chmurze
- <p align="justify">Idea stojąca za obliczeniami w chmurze opiera się na tym, by odciążyć komputery klienckie i przenieść obliczenia, oprogramowanie, a także część danych na serwery chmury. Sam termin można wyśledzić już w latach 90, ale jego spopularyzowanie przypisuje się korporacji Amazon, który zaczął świadczyć takie usługi w roku 2006.  Jedną z niezaprzeczalnych zalet chmury jest skalowalność, klient potrzebujący więcej mocy może wypożyczyć kolejne maszyny. Chmury dzielimy na 4 warstwy: sprzętu, infrastruktury, platformy i aplikacji. Na najniższej warstwie sprzętowej znajdują się podstawowe elementy, takie jak procesory, pamięć i dyski twarde. Na kolejnych poziomach pojawia się wirtualizacja i rośnie poziom abstrakcji. Warstwa infrastruktury przypomina warstwę sprzętową, ale jej zasoby są wirtualizowane. Warstwę platformy przyrównać można do systemu operacyjnego, oferuje ona programistom środowisko, na którym można łatwo testować i uruchamiać aplikacje. W ostatniej warstwie aplikacji można korzystać z programów przygotowanych przez dostawcę usług. Programy te są wykonywane na sprzęcie dostawcy. Warto zauważyć, że im większa warstwa, tym bardziej faktyczne maszyny stają się mniej widoczne dla klienta. Ten brak transparentności może przeszkadzać przy szacowaniu złożoności aplikacji. Pojawiają się też wątpliwości na temat bezpieczeństwa plików w chmurze i zagrożenia dla naszej prywatności. Dostęp do chmury uzyskać można przez różne interfejsy, począwszy od linii poleceń, skończywszy na aplikacji sieciowej. Istnieją różne modele dostępu do obliczeń w chmurze. Wyróżnić można IaaS, PaaS i SaaS. Pierwszy model pokrywa warstwę sprzętu i infrastruktury, drugi obejmuje warstwę platformy, a trzeci skupia się na warstwie aplikacji. Co ciekawe, chmury używane są także w branży rozrywkowej, co można zaobserwować na przykładzie takich serwisów jak  Nvidia GRID. <br /></p>
-[24-03-08 Jakub ledwoń, wersja 0.5]<br />
+ <p align="justify">Pomysł obliczeń w chmurze opiera się na tym, by odciążyć komputery klientów i przenieść obliczenia, oprogramowanie, a także część danych na serwery chmury. Sam termin można napotkać już w latach 90. XX wieku, ale jego spopularyzowanie przypisuje się korporacji Amazon, która zaczęła świadczyć takie usługi w roku 2006.  Jedną z niezaprzeczalnych zalet chmury jest skalowalność, klient potrzebujący więcej mocy może wypożyczyć kolejne maszyny. Chmury dzielimy na 4 warstwy: sprzętu, infrastruktury, platformy i aplikacji. W najniższej warstwie sprzętowej znajdują się podstawowe elementy, takie jak procesory, pamięć operacyjna i dyski twarde. Na kolejnych poziomach pojawia się wirtualizacja i rośnie poziom abstrakcji. Warstwa infrastruktury przypomina warstwę sprzętową, ale jej zasoby są wirtualizowane. Warstwę platformy można porównać do systemu operacyjnego, udostępnia ona programistom środowisko, w którym można łatwo testować i uruchamiać aplikacje. W ostatniej warstwie aplikacji można korzystać z programów przygotowanych przez dostawcę usług. Programy te są wykonywane na sprzęcie dostawcy. Warto zauważyć, że im wyższa warstwa, tym bardziej mniej rzeczywiste maszyny stają się  widoczne dla klienta. Ten brak przezroczystości może przeszkadzać przy szacowaniu złożoności aplikacji. Pojawiają się też wątpliwości dotyczące bezpieczeństwa plików w chmurze i zagrożenia prywatności. Dostęp do chmury można uzyskać przez różne interfejsy, poczynając od poleceń teksotwych, a kończąc na interfejsie aplikacji sieciowej. Istnieją różne modele dostępu do obliczeń w chmurze. Wyróżnić można IaaS (Infrastructure as a Service), PaaS (Platform as a Service) i SaaS (Software as a Service). Pierwszy model obejmuje warstwę sprzętu i infrastruktury, drugi warstwę platformy, a trzeci skupia się na warstwie aplikacji. Co ciekawe, chmury są używane także w branży rozrywkowej, za przykład może służyć usługa Nvidia GRID. <br /></p>
+[17-03-24 Jakub Ledwoń, wersja 0.5]<br />
+[17-03-29, zpl, wersja 0.6] <br />
+
+### BitTorrent 
+ <p align="justify">BitTorrent jest zgodnym z P2P protokołem, służącym dystrybucji pików w Internecie. Fragmenty plików są przesyłane bezpośrednio pomiędzy użytkownikami, którzy mogą jednocześnie pobierać te części, których nie posiadają, jak i wysyłać te, które już wcześniej pobrali. Jest to stosunkowo nowy protokół, ponieważ jego pierwsza wersja została upubliczniona w 2001 roku. Początkowo wymagał istnienia dodatkowego serwera – trackera, na którym przechowywane były informacje o stanie i lokalizacji pików na komputerach klienckich, ale nowsze wersje protokołu dzięki technologiom DHT i PeX wyeliminowały ten obowiązek. Protokół wykorzystywany jest zarówno przez użytkowników prywatnych, którzy dzielą się rożnymi dobrami, jak i poprzez firmy, które odciążają w ten sposób swoje główne serwery, przekazując brzemię wysyłania plików na konsumentów. Protokół BitTorrent został zaimplementowany w wielu aplikacjach i jest powszechnie używany. <br /></p>
+[17-06-21 Jakub Ledwoń, wersja 1.0]<br />
+
+### MD5
+ <p align="justify">MD5 to kryptograficzny algorytm skrótu używany głównie do weryfikacji plików. MD5 został opublikowany w 1992 jako następca algorytmu MD4. MD5 jest funkcją, która dla podanego ciągu danych generuje 128-bitowy skrót. Przeważnie zmiana paru bajtów pliku powoduje wygenerowanie całkowicie różnego skrótu, lecz algorytm jest podatny na kolizje i nie jest zalecane stosowanie go w sytuacjach, które wymagają wzmożonego bezpieczeństwa. Dzisiejsze komputery domowe potrafią wygenerować kolizję w ciągu ułamka sekundy. <br /></p>
+[17-06-21 Jakub Ledwoń, wersja 1.0]<br />
+
+### Spójność FIFO
+ <p align="justify">Spójność FIFO (w źródłach angielskojęzycznych możemy też spotkać skrót PRAM) jest jednym z pierwszych opracowanych modeli spójności i cechuje się łatwością implantacji. W tym modelu dane do procesów mogą docierać z dowolną kolejnością z jednym tylko wyjątkiem. Dane z jednego procesu muszą dotrzeć do drugiego w takiej samej kolejności, w jakiej zostały zapisane w pierwszym. Oznacza to, że nieistotne jest, czy trzeci proces odczyta najpierw operacje z drugiego procesu, czy z pierwszego. <br /></p>
+[17-06-21 Jakub Ledwoń, wersja 1.0]<br />
+
+### Plotkowanie
+ <p align="justify">Protokół plotkowania jest jednym ze sposobów wykorzystywanym przez systemy (w tym rozproszone) do komunikacji. Etymologia terminu jest w tym przypadku dość intuicyjna i ma swoje źródło w popularnym ludzkim zwyczaju. Zazwyczaj proces wybiera odbiorcę „plotki” losowo spośród listy pozostałych rozmownych procesów i przekazuje mu wybraną informację. Wszystkie plotkujące procesy co jakiś czas dzielą się nowymi informacjami, co skutkuje samoaktualizującą się bazą informacji. Ze względu na element losowości nie możemy jednak założyć niezawodności. Algorytmy oparte na tej idei wykorzystywane są na przykład w routingu, a także do zwalczania entropii. <br /></p>
+[17-06-21 Jakub Ledwoń, wersja 1.0]<br />
+
+### Elixir
+ <p align="justify">Elixir jest jednym z obowiązujących w Polsce systemem rozliczeń międzybankowych działającym od 1994 roku. W 2004 roku całkowicie wyparł system Sybir, oparty na wymianie papierowych dokumentów. Jest wykorzystywany podczas większości przelewów detalicznych z racji na to, że banki przeważnie nie pobierają opłat z tego typu przelewy. Nie jest systemem typu rzeczywistego, lecz każdego dnia roboczego obsługuje 3 sesje wyjścia i wejścia, których to konkretne godziny różnią się w zależności od banku. Część banków wdrożyła też system Express Elixir, który realizuję przelew międzybankowy w ciągu kilku sekund. Transakcje wysokokwotowe są najczęściej obsługiwane przez SORBNET2 – system czasu rzeczywistego. <br /></p>
+[17-06-21 Jakub Ledwoń, wersja 1.0]<br />
+
 
 ### DII
  <p align="justify"> DII (<i>ang.  Dynamic Invocation Interface</i>) -- to Interfejs Dynamicznych Wywołań, który jest częśćią implementacji OMA. Interfejsy obiektów dzielimy na znane w trakcie etapu kompliacji i dynamiczne. Interfejsy dynamiczne pozwalają klientom używać obiektów CORBA, których typy nie były znane w czasie kompilacji.</p><br />
