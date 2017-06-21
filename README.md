@@ -146,7 +146,7 @@ Wyróżniamy osiem głównych rodzajów przezroczystości:
 <li>Przezroczystość współbieżności</li>
 <li>Przezroczystość trwałości</li>
 <li>Przezroczystość awarii</li>
-</ul><br />
+</ul><br /></p>
 [20.06.2017 Wojciech Goska, wersja 1.0]<br />
 [20.06.2017 Wojciech Goska, wersja 1.1]<br />
 
