@@ -28,7 +28,7 @@
 * [Serwer iteracyjny, a współbieżny](#serwer-iteracyjny-a-współbieżny)
 * [Serwer stanowy, a bezstanowy](#serwer-stanowy-a-bezstanowy)
 * [Serwer obiektowy](#serwer-obiektowy)
-* [Model TCP/IP](#model-tcp/ip)
+* [Model TCP/IP](#model-tcp\ip)
 
 ### System rozproszony
 
