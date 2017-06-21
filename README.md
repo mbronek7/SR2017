@@ -146,8 +146,7 @@ Wyróżniamy osiem głównych rodzajów przezroczystości:
 <li>Przezroczystość skalowania</li>
 <li>Przezroczystość współbieżności</li>
 <li>Przezroczystość trwałości</li>
-<li>Przezroczystość awarii</li>
-</ul><br /></p>
+<li>Przezroczystość awarii</li></ul><br /></p>
 [20.06.2017 Wojciech Goska, wersja 1.0]<br />
 [20.06.2017 Wojciech Goska, wersja 1.1]<br />
 
@@ -156,9 +155,9 @@ Wyróżniamy osiem głównych rodzajów przezroczystości:
 [20.06.2017 Wojciech Goska, wersja 1.0]<br />
 
 ### Maszyna wirtualna
-<p align="justify"> Maszyna wirtualna (<i>ang. virtual machine</i>) to ogólna nazwa dla programów, które tworzą środowisko uruchomieniowe dla innych programów. Maszyna wirtualna obsługuje wszystkie odwołania uruchomionej aplikacji, w ten
-sposób "udając" że jest ona wykonywana na rzeczywistym sprzęcie. W maszynie wirtualnej możemy uruchomić program, system czy nawet kolejną maszynę wirtualną. Niestety, wszystko to działa kosztem zwiększonego wykorzystania procesora i pamięci
-operacyjnej, ponieważ poza uruchamianymi programami, sama maszyna wirtualna również korzysta z tychże zasobów.<br /></p>
+<p align="justify"> Maszyna wirtualna (<i>ang. virtual machine</i>) to ogólna nazwa dla programów, które tworzą środowisko wykonawcze innych programów. Maszyna wirtualna obsługuje wszystkie odwołania uruchomionej aplikacji, w ten
+sposób "udając", że jest ona wykonywana na rzeczywistym sprzęcie. W maszynie wirtualnej możemy uruchomić program, system lub nawet kolejną maszynę wirtualną. Niestety, wszystko to działa kosztem zwiększonego wykorzystania procesora i pamięci
+operacyjnej, ponieważ poza uruchamianymi programami, sama maszyna wirtualna również korzysta z tych zasobów.<br /></p>
 [20.06.2017 Wojciech Goska, wersja 1.0]<br />
 
 ### Model TCP IP
