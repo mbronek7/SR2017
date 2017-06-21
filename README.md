@@ -24,6 +24,7 @@
 * [Otwartość](#otwartość)
 * [Maszyna wirtualna](#maszyna-wirtualna)
 * [Model TCP/IP](#model-tcp-ip)
+* [Model OSI](#model-osi)
 * [Algorytmy synchronizacji czasu](#algorytmy-synchronizacji-czasu)
 * [Architektura klient-serwer](#architektura-klient-serwer)
 * [Serwer iteracyjny, a współbieżny](#serwer-iteracyjny-a-współbieżny)
@@ -164,6 +165,10 @@ operacyjnej, ponieważ poza uruchamianymi programami, sama maszyna wirtualna ró
 ### Model TCP IP
 <p align="justify">Model TCP/IP (<i>ang. Transmission Control Protocol/ Internet Protocol</i>)- model struktury protokołów komunikacyjnych, zakładający podział warstwy komunikacyjnej na cztery kolejne, współpracujące warstwy tj. : warstwa aplikacji, warstwa transportowa, warstwa Internetu oraz warstwa dostępu do sieci. Model ten został stworzony przez amerykańską agencję rządową DARPA (<i>ang. Defence Advanced Research Projects Agency</i>) w latach 70. i pierwotnie miał pomagać w tworzeniu odpornych na ataki sieci komputerowych. Jest on podstawą współczesnego internetu.	<br /><br />
 Więcej informacji o protokołach TCP, IP oraz o wielu innych można znaleźć <a href="http://www.networksorcery.com/">tutaj.</a><br /></p>
+[21.06.2017 Wojciech Goska, wersja 1.0]<br />
+
+### Model OSI
+<p align="justify">Model OSI, a właściwie model ISO OSI(<i>ang. ISO Open System Inteconnection</i>) to model odniesienia komunikacji systemów otwartych, tj. takich które nie mają być członkiem żadnej sieci zamkniętej. Model OSI składa się z siedmiu warstw tj. : warstwa fizyczna, warstwa łącza danych, warstwa sieciowa, warstwa transportowa, warstwa sesji warstwa prezentacji i warstwa aplikacji.  Warstwy sesji i prezentacji składają się na warstwę pośrednią gdzie umiejscowiony jest nasz system rozproszony. Model ten stworzony został przez Międzynarodową Organizację Normalizacyjną (<i>ang. International Organization for Standarization</i>)<br /></p>
 [21.06.2017 Wojciech Goska, wersja 1.0]<br />
 
 ### Algorytmy synchronizacji czasu
