@@ -153,13 +153,13 @@ Wyróżniamy osiem głównych rodzajów przezroczystości:
 ### Otwartość
 <p align="justify"> Otwartość (<i>ang. openness</i>), w systemach rozproszonych, charakteryzuje system, oferujący elementy, które z łatwością można wykorzystać czy zintegrować z zupełnie innym, nowym systemem, dzięki czemu jest on podatny na rozszerzenia oraz możliwość rozbudowy zarówno pod względem sprzętowym, jak i oprogramowania. Otwartość umożliwia nam dołączyć do naszego systemu kolejne urządzenie, bez martwienia się o jego oprogramowanie, ponieważ warstwa pośrednia zapewnia nam protokoły i interfejsy potrzebne do jego obsłużenia.<br /></p>
 [20.06.2017 Wojciech Goska, wersja 1.0]<br />
-[21.06.2017 Wojciech Goska, wersja 1.1]<br />
 
 ### Maszyna wirtualna
 <p align="justify"> Maszyna wirtualna (<i>ang. virtual machine</i>) to ogólna nazwa dla programów, które tworzą środowisko wykonawcze innych programów. Maszyna wirtualna obsługuje wszystkie odwołania (do systemu) uruchomionej aplikacji, w ten
 sposób "udając", że jest ona wykonywana na rzeczywistym sprzęcie. W maszynie wirtualnej możemy uruchomić program, system lub nawet kolejną maszynę wirtualną. Niestety, wszystko to działa kosztem zwiększonego wykorzystania procesora i pamięci
 operacyjnej, ponieważ poza uruchamianymi programami, sama maszyna wirtualna również korzysta z tych zasobów.<br /></p>
 [20.06.2017 Wojciech Goska, wersja 1.0]<br />
+[21.06.2017 Wojciech Goska, wersja 1.1]<br />
 
 ### Model TCP IP
 <p align="justify">Model TCP/IP (<i>ang. Transmission Control Protocol/ Internet Protocol</i>)- model struktury protokołów komunikacyjnych, zakładający podział warstwy komunikacyjnej na cztery kolejne, współpracujące warstwy tj. : warstwa aplikacji, warstwa transportowa, warstwa Internetu oraz warstwa dostępu do sieci. Model ten został stworzony przez amerykańską agencję rządową DARPA (<i>ang. Defence Advanced Research Projects Agency</i>) w latach 70. i pierwotnie miał pomagać w tworzeniu odpornych na ataki sieci komputerowych. Jest on podstawą współczesnego internetu.	<br /><br />
