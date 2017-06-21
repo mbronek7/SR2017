@@ -190,10 +190,6 @@ oblicza na ich podstawie nowy czas np. stosując
 uśrednianie</li><li> Algorytm jest rozproszony</li><li>Algorytm uwzględnia czasy przesyłania komunikatów</li><li>Algorytm odrzuca skrajne wartości</li></ul>
  </ol></p><br/>[Szymon Kopa 1.0]</br>
  
- ### Architektura klient-serwer
-
- <p align="justify">
- 
  ### Serwer iteracyjny, a współbieżny
 
  <p align="justify">
