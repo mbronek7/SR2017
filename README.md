@@ -236,6 +236,6 @@ segmentów pamięci itp.
 
 ### Model TCP/IP
 
-<p align="justify">Model TCP/IP (<i>ang. Transmission Control Protocol/ Internet Protocol</i>)- model struktury protokołów komunikacyjnych, zakładający podział warstwy komunikacyjnej na cztery kolejne, współpracujące warstwy tj. : warstwa aplikacji, warstwa transportowa, warstwa Internetu oraz warstwa dostępu do sieci. Model ten został stworzony przez amerykańską agencję rządową DARPA (<i>ang. Defence Advanced Research Projects Agency</i>) w latach 70. i pierwotnie miał pomagać w tworzeniu odpornych na ataki sieci komputerowych.	<br />
+<p align="justify">Model TCP/IP (<i>ang. Transmission Control Protocol/ Internet Protocol</i>)- model struktury protokołów komunikacyjnych, zakładający podział warstwy komunikacyjnej na cztery kolejne, współpracujące warstwy tj. : warstwa aplikacji, warstwa transportowa, warstwa Internetu oraz warstwa dostępu do sieci. Model ten został stworzony przez amerykańską agencję rządową DARPA (<i>ang. Defence Advanced Research Projects Agency</i>) w latach 70. i pierwotnie miał pomagać w tworzeniu odpornych na ataki sieci komputerowych.	<br /><br />
 Więcej informacji o protokołach TCP, IP oraz o wielu innych można znaleźć <a href="http://www.networksorcery.com/">tutaj</a><br /></p>
 [21.06.2017 Wojciech Goska, wersja 1.0]<br />
