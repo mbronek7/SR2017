@@ -26,7 +26,7 @@
 * [Model TCP/IP](#model-tcp-ip)
 * [Model OSI](#model-osi)
 * [Algorytmy synchronizacji czasu](#algorytmy-synchronizacji-czasu)
-* [Serwer iteracyjny, a współbieżny](#serwer-iteracyjny-a-współbieżny)
+* [Serwer sekwencyjny, a współbieżny](#serwer-sekwencyjny-a-współbieżny)
 * [Serwer stanowy, a bezstanowy](#serwer-stanowy-a-bezstanowy)
 * [Serwer obiektowy](#serwer-obiektowy)
 
@@ -189,11 +189,11 @@ oblicza na ich podstawie nowy czas np. stosując
 uśrednianie</li><li> Algorytm jest rozproszony</li><li>Algorytm uwzględnia czasy przesyłania komunikatów</li><li>Algorytm odrzuca skrajne wartości</li></ul>
  </ol></p><br/>[Szymon Kopa 1.0]</br>
  
- ### Serwer iteracyjny, a współbieżny
+ ### Serwer sekwencyjny, a współbieżny
 
  <p align="justify">
  <ul>
- <li><b>Serwer iteracyjny</b> samodzielnie obsługuje zlecenia klientów zwracając im ewentualnie wyniki. Innymi słowy
+ <li><b>Serwer sekwencyjny</b> samodzielnie obsługuje zlecenia klientów zwracając im ewentualnie wyniki. Innymi słowy
 serwer zmuszony jest do obsługi zleceń jedno po drugim, przy czym zanim rozpocznie kolejne zadanie musi
 zakończyć wykonywanie poprzedniego</li>
 <li><b>Serwer współbieżny</b> pozbawiony jest niedogodności powodującej, że każde kolejne żądanie musi oczekiwać
