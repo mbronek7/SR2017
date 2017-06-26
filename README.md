@@ -161,11 +161,10 @@ Wyróżniamy osiem głównych rodzajów przezroczystości:
 [20.06.2017 Wojciech Goska, wersja 1.0]<br />
 
 ### Maszyna wirtualna
-<p align="justify"> Maszyna wirtualna (<i>ang. virtual machine</i>) to ogólna nazwa dla programów, które tworzą środowisko wykonawcze innych programów. Maszyna wirtualna obsługuje wszystkie odwołania (do systemu) uruchomionej aplikacji, w ten
-sposób "udając", że jest ona wykonywana na rzeczywistym sprzęcie. W maszynie wirtualnej możemy uruchomić program, system lub nawet kolejną maszynę wirtualną. Niestety, wszystko to działa kosztem zwiększonego wykorzystania procesora i pamięci
-operacyjnej, ponieważ poza uruchamianymi programami, sama maszyna wirtualna również korzysta z tych zasobów.<br /></p>
+<p align="justify"> Maszyna wirtualna (<i>ang. virtual machine</i>) to ogólna nazwa dla programów, które tworzą środowisko wykonawcze innych programów. Obsługuje wszystkie odwołania (do systemu) uruchomionej aplikacji, w ten sposób "udając", że jest ona wykonywana na rzeczywistym sprzęcie. Umożliwia jednoczesne używanie różnych systemów komputerowych na jednej fizycznej maszynie. Zapewnia wysoki poziom bezpieczeństwa z powodu wielu warstw separacji: system operacyjny gościa, oprogramowanie maszyny wirtualnej, system operacyjny hosta. Wadą tego rozwiązania jest mniejsza wydajności i odczuwalne większe zużycie RAMu (w pamięci podręcznej musi znajdować się jądro każdego uruchomionego systemu operacyjnego).<br /></p>
 [20.06.2017 Wojciech Goska, wersja 1.0]<br />
 [21.06.2017 Wojciech Goska, wersja 1.1]<br />
+[26.06.2017 Łukasz Dzwoniarek, wersja 1.2]<br/> 
 
 ### Model TCP IP
 <p align="justify">Model TCP/IP (<i>ang. Transmission Control Protocol/ Internet Protocol</i>)- model struktury protokołów komunikacyjnych, zakładający podział warstwy komunikacyjnej na cztery kolejne, współpracujące warstwy tj. : warstwa aplikacji, warstwa transportowa, warstwa Internetu oraz warstwa dostępu do sieci. Model ten został stworzony przez amerykańską agencję rządową DARPA (<i>ang. Defence Advanced Research Projects Agency</i>) w latach 70. i pierwotnie miał pomagać w tworzeniu odpornych na ataki sieci komputerowych. Jest on podstawą współczesnego internetu.	<br /><br />
@@ -245,39 +244,32 @@ segmentów pamięci itp.
  </p>
 <br/>[Szymon Kopa 1.0]<br/>
 
-
 ### Docker
 <p align="justify">
 Oprogramowanie opracował Solomona Hykes w firmie dotCloud. W marcu 2013 zostało udostępnione publicznie i od tego czasu liczba jego użytkowników  rośnie. Pozwala umieszczać programy w kontenerach, oraz udostępnia mechanizmy zarządzania i automatyzacji wdrażania tak przygotowanego oprogramowania. Docker opiera swoje działania na istniejących narzędziach systemu Linux (grupy kontrolne i przestrzenie nazw, kontenery Linuxa, ujednolicony systemów plików). Z tego powodu wymaga do działania 64 bitowego systemu Linux z jądrem w wersji co najmniej 3.10. Za uruchomienie przygotowanych obrazów oprogramowania na fizycznych maszynach odpowiedzialny jest Demon Dockera, który komunikuje się z klientem i repozytorium obrazów. Docker umożliwia lepsze wykorzystanie zasobów systemowych z porównaniu do wirtualnych maszyn kosztem zmniejszenia izolacji pomiędzy kontenerami i systemem gospodarza.
 </p>
-<br/>[Łukasz Dzwoniarek 1.0]<br/> 
+[Łukasz Dzwoniarek 1.0]<br/> 
  
 ### Router
 <p align="justify">
 Urządzenia sieciowe wykorzystywane do tworzenia małych sieci lokalnych. Składa się z:
- <li>switcha - odpowiedzialnego za przekazywanie pakietów pomiędzy urządzeniami w sieci wewnętrznej (komputerami podłączonymi do gniazd Ethernetowych i pozostałymi elementami routera)</li>
- <li>karta Wi-Fi – odpowiada za komunikację z komputerami podłączonymi do routera bezprzewodowo</li>
+ <li>switcha – odpowiedzialnego za przekazywanie pakietów pomiędzy urządzeniami w sieci wewnętrznej (komputerami podłączonymi do gniazd Ethernetowych i pozostałymi elementami routera)</li>
+ <li>karty Wi-Fi – odpowiada za komunikację z komputerami podłączonymi do routera bezprzewodowo</li>
  <li>serwera DHCP – przydziela adres IP urządzeniom w sieci lokalnej</li>
  <li>serwera DNS – tłumaczy adresy URL na adresy IP</li>
  <li>modemu – odpowiada za komunikację sieci lokalnej z Internetem, zazwyczaj działa w technologii DSL, VDSL lub 4G</li>
 Niektóre z powyższych usług są świadczone przez jeden fizyczny sprzęt, jednak poszczególne elementy routera potrafią działać niezależnie, dlatego router może pracować w roli do której nie został stworzony np. switch lub acces point. 
 </p>
-<br/>[Łukasz Dzwoniarek 1.0]<br/> 
- 
-### Maszyna wirtualna
-<p align="justify">
-Oprogramowanie, które pozwala na utworzenie "wirtualnego komputera", na którym można zainstalować prawdziwy system operacyjny. Umożliwia jednoczesne używanie różnych systemów komputerowych na jednej fizycznej maszynie. Zapewnia wysoki poziom bezpieczeństwa z powodu wielu warstw separacji: system operacyjny gościa, oprogramowanie maszyny wirtualnej, system operacyjny hosta. Jego wadą jest mniejsza wydajności i odczuwalne większe zużycie RAMu (w pamięci podręcznej musi znajdować się jądro każdego uruchomionego systemu operacyjnego).
-</p>
-<br/>[Łukasz Dzwoniarek 1.0]<br/> 
+[Łukasz Dzwoniarek 1.0]<br/> 
  
 ### Wirtualizacja na poziomie systemu operacyjnego
 <p align="justify">
 Technologia pozwalająca na utworzenie "wirtualnego systemu operacyjnego". Jest realizowana przez jądro systemu operacyjnego, które umożliwia odseparowanie od siebie oprogramowania, w taki sposób aby każdy program nie wiedział o innych instancjach systemu operacyjnego. Metoda nie umożliwia jednoczesnego używania różnych systemów komputerowych na jednej fizycznej maszynie. Zapewnia niższy poziom bezpieczeństwa w porównaniu z maszynami wirtualnymi, jednak jest bezpieczniejszym rozwiązaniem od klasycznego separowania programów, wg. kont użytkownika (i związani z nim uprawnieniami). Jego zaletą jest wysoka wydajności i brak odczuwalne większe zużycie RAMu (w pamięci podręcznej musi znajdować się tylko jądro jednego systemu operacyjnego).
 </p>
-<br/>[Łukasz Dzwoniarek 1.0]<br/> 
+[Łukasz Dzwoniarek 1.0]<br/> 
  
 ### SMB
 <p align="justify">
 Protokół umożliwiający udostępnianie zasobów komputerowych (np. plików, drukarek). Opracowany w latach 80 przez IBM, obecnie wykorzystywany w systemach rodziny Windows.  Został stworzony w oparciu o architekturę klient-serwer. W praktyce często każdy komputer w danej sieci udostępnia część swoich zasobów innym, sieci takie w swoim zachowaniu przypominają rozwiązania peer-to-peer. W swojej historii protokół zaliczył poważne wpadki. W 1997 roku odkryto podatność umożliwiającą wykradzenie hasła i loginu użytkownika; ponieważ błąd wynikał z wadliwej architektury protokołu Microsoft nie był w stanie całkowicie go usunąć. Było to wykorzystywane kilka lat przez NSA, a po wycieku z tej organizacji hakerzy wykorzystali go do stworzenia złośliwego oprogramowania WannaCry, które zaszyfrowało dane na 200 tysiącach komputerów.
 </p>
-<br/>[Łukasz Dzwoniarek 1.0]<br/>
+[Łukasz Dzwoniarek 1.0]<br/>
