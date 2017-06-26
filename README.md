@@ -31,7 +31,6 @@
 * [Serwer obiektowy](#serwer-obiektowy)
 * [Docker](#docker)
 * [Router](#router)
-* [Maszyna wirtualna](#maszyna-wirtualna)
 * [Wirtualizacja na poziomie systemu operacyjnego](#wirtualizacja-na-poziomie-systemu-operacyjnego)
 * [SMB](#smb)
  
